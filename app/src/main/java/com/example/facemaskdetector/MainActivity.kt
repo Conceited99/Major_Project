@@ -3,6 +3,7 @@ package com.example.facemaskdetector
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.graphics.Bitmap
@@ -11,6 +12,7 @@ import android.media.AudioManager
 import android.media.Image
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.os.Handler
 import android.util.DisplayMetrics
 import android.util.Log
 import android.widget.Toast
@@ -48,11 +50,12 @@ class MainActivity : AppCompatActivity() {
     private var lensFacing: Int = CameraSelector.LENS_FACING_FRONT
     private var camera: Camera? = null
     private lateinit var cameraExecutor: ExecutorService
+    private val delay: Long = 5000
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         setupML()
         setupCameraThread()
         setupCameraControllers()
@@ -61,6 +64,11 @@ class MainActivity : AppCompatActivity() {
             requireCameraPermission()
         } else {
             setupCamera()
+            Handler().postDelayed({
+                startActivity(Intent(this,Temperature::class.java))
+                finish()
+
+            },delay)
         }
     }
 
@@ -326,6 +334,7 @@ private class BitmapOutputAnalysis(
     override fun analyze(imageProxy: ImageProxy) {
         imageProxy.toBitmap()?.let{
             listener(it)
+
         }
         imageProxy.close()
     }
