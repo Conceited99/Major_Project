@@ -14,7 +14,6 @@ private val delay: Long = 5000
             Handler().postDelayed({
                 startActivity(Intent(this,Welcome::class.java))
             finish()
-
         },delay)
     }
 

@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Temperature">
+
     <TextView
+        android:id="@+id/temp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TEMPREATURE SECTION"
@@ -13,6 +15,21 @@
         android:textColor="@color/purple_700"
         android:textSize="30sp"
         tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/User"
+        android:layout_width="182dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="User Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp">
 
     </TextView>
 

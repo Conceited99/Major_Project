@@ -5,13 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Covid_Activity">
+
     <TextView
+        android:id="@+id/Covid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="30sp"
-        android:textAlignment="center"
+        android:layout_height="wrap_content"
         android:text="COVID SCREENING"
-        android:textColor="@color/purple_500">
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/User"
+        android:layout_width="182dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="User Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Covid"
+        tools:ignore="MissingConstraints">
 
     </TextView>
 

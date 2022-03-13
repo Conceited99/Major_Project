@@ -14,19 +14,55 @@
         android:textAlignment="center"
         android:textColor="@color/purple_700"
         android:textSize="30sp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
     </TextView>
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="122dp"
+        android:text="Please Enter your Name"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/textView">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/Namefeild"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="477dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView">
+
+    </EditText>
 
     <Button
         android:id="@+id/Butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="63dp"
         android:text="Begin"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="166dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Namefeild"
         tools:ignore="MissingConstraints">
 
     </Button>
