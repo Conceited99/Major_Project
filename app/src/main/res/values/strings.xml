@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FaceMask Detector</string>
+    <string name="welcome_to_the_utech_medical_center">WELCOME TO THE UTECH MEDICAL CENTER</string>
+    <string name="please_enter_your_name">Please Enter your Name</string>
+    <string name="begin">Begin</string>
+    <string name="red_cross_logo">Red cross logo</string>
+    <string name="temperature_section">TEMPERATURE SECTION</string>
+    <string name="user_name">User Name</string>
+    <string name="next">Next</string>
 </resources>

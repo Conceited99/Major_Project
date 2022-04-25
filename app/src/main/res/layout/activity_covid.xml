@@ -5,51 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Covid_Activity"
-    android:background="@drawable/covid">
+    android:background="@drawable/med_background">
 
     <TextView
         android:id="@+id/Covid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
         android:text="COVID SCREENING"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints">
+        android:textColor="@color/red"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="132dp">
 
     </TextView>
 
     <TextView
         android:id="@+id/User"
-        android:layout_width="182dp"
-        android:layout_height="32dp"
+        android:layout_width="282dp"
+        android:layout_height="61dp"
         android:layout_marginStart="229dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="User Name"
-        android:textSize="18sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Covid"
         tools:ignore="MissingConstraints">
 
     </TextView>
+
     <Button
         android:id="@+id/Butt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="131dp"
         android:layout_marginStart="156dp"
         android:layout_marginTop="416dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="63dp"
+        android:backgroundTint="@color/red"
         android:text="Next"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="50sp"
         app:flow_horizontalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/User"
+        app:layout_constraintVertical_bias="0.777"
         tools:ignore="MissingConstraints">
 
     </Button>

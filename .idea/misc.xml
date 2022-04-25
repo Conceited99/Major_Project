@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Carlisha Nicholson/OneDrive/Documents/GitHub/Major_Project/app/src/main/res/layout/activity_covid.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Carlisha Nicholson/OneDrive/Documents/GitHub/Major_Project/app/src/main/res/layout/activity_welcome.xml" value="0.33" />
+        <entry key="..\:/Users/Carlisha Nicholson/OneDrive/Documents/GitHub/Major_Project/app/src/main/res/layout/activity_covid.xml" value="0.5" />
+        <entry key="..\:/Users/Carlisha Nicholson/OneDrive/Documents/GitHub/Major_Project/app/src/main/res/layout/activity_temperature.xml" value="0.5" />
+        <entry key="..\:/Users/Carlisha Nicholson/OneDrive/Documents/GitHub/Major_Project/app/src/main/res/layout/activity_vitals.xml" value="0.5" />
+        <entry key="..\:/Users/Carlisha Nicholson/OneDrive/Documents/GitHub/Major_Project/app/src/main/res/layout/activity_welcome.xml" value="0.5" />
         <entry key="..\:/Users/shani/Desktop/FaceMaskDetector/app/src/main/res/drawable/green_border.xml" value="0.2703125" />
         <entry key="..\:/Users/shani/Desktop/FaceMaskDetector/app/src/main/res/drawable/ic_baseline_camera_rear_24.xml" value="0.2703125" />
         <entry key="..\:/Users/shani/Desktop/FaceMaskDetector/app/src/main/res/drawable/ic_camera_front.xml" value="0.2703125" />

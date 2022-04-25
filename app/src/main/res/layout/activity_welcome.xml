@@ -4,67 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Welcome">
+    tools:context=".Welcome"
+    android:background="@drawable/med_background"
+    >
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="WELCOME TO THE UTECH MEDICAL CENTER"
+        android:layout_width="1405dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/welcome_to_the_utech_medical_center"
         android:textAlignment="center"
-        android:textColor="@color/purple_700"
-        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="94dp">
 
     </TextView>
 
     <TextView
         android:id="@+id/textname"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="122dp"
-        android:text="Please Enter your Name"
+        android:layout_width="1906dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="272dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/please_enter_your_name"
         android:textAlignment="center"
-        android:textColor="@color/purple_700"
-        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textSize="70sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@id/textView">
-
-    </TextView>
+        app:layout_constraintTop_toTopOf="@id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"></TextView>
 
     <EditText
         android:id="@+id/Namefeild"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginBottom="477dp"
+        android:layout_width="1812dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints="Full Name"
+        android:inputType="text"
+        android:textSize="70sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textname"
+        tools:ignore="SpeakableTextPresentCheck">
 
     </EditText>
 
     <Button
         android:id="@+id/Butt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="292dp"
+        android:layout_height="98dp"
         android:layout_marginStart="156dp"
         android:layout_marginTop="416dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="63dp"
-        android:text="Begin"
+        android:backgroundTint="@color/red"
+        android:fontFamily="sans-serif"
+        android:text="@string/begin"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="50sp"
         app:flow_horizontalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Namefeild"
+        app:layout_constraintVertical_bias="0.83"
         tools:ignore="MissingConstraints">
 
     </Button>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="312dp"
+        android:layout_marginEnd="1476dp"
+        android:contentDescription="@string/red_cross_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/red_cross" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
