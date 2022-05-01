@@ -65,9 +65,8 @@ class MainActivity : AppCompatActivity() {
         } else {
             setupCamera()
             Handler().postDelayed({
-                startActivity(Intent(this,Temperature::class.java))
+                startActivity(Intent(this,Welcome::class.java))
                 finish()
-
             },delay)
         }
     }
@@ -233,6 +232,7 @@ class MainActivity : AppCompatActivity() {
                            // playsong()
                             R.color.red
                         }else R.color.green
+
                     )
                 )
                 overlay.background = getDrawable(

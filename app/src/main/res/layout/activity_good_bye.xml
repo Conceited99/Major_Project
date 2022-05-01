@@ -34,5 +34,24 @@
         tools:ignore="MissingConstraints">
 
     </TextView>
+    <Button
+        android:id="@+id/Butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="63dp"
+        android:text="Exit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/User"
+        tools:ignore="MissingConstraints">
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

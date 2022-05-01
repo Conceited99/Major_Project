@@ -2,7 +2,6 @@ package com.example.facemaskdetector
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.text.TextUtils
 import android.widget.EditText
 import android.widget.Toast
@@ -23,10 +22,12 @@ class Welcome : AppCompatActivity() {
                 Toast.makeText(this, "PLEASE ENTER YOUR NAME", Toast.LENGTH_LONG).show()
             }
              else {
-                Handler().postDelayed({
-                    startActivity(Intent(this,MainActivity::class.java))
-                    finish()
-                },delay)
+                 val message = username.text.toString()
+                   val intent = Intent(this,Temperature::class.java).also {
+                       it.putExtra("MESSAGE",message)
+                       startActivity(it)
+
+                   }
             }
         }
     }
