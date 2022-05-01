@@ -17,7 +17,7 @@ class Covid_Activity : AppCompatActivity() {
         }
         val Butt = findViewById<Button>(R.id.Butt);
         Butt.setOnClickListener {
-                val intent = Intent(this,GoodBye::class.java).also {
+                val intent = Intent(this,SendData::class.java).also {
                     it.putExtra("MESSAGE",message)
                     startActivity(it)
                 }

@@ -19,21 +19,6 @@
 
     </TextView>
 
-    <TextView
-        android:id="@+id/User"
-        android:layout_width="182dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="229dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="User Name"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Goodbye"
-        tools:ignore="MissingConstraints">
-
-    </TextView>
     <Button
         android:id="@+id/Butt"
         android:layout_width="wrap_content"
@@ -49,7 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/User"
+        app:layout_constraintTop_toTopOf="@id/Goodbye"
         tools:ignore="MissingConstraints">
 
     </Button>
