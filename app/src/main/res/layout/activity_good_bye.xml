@@ -4,53 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GoodBye"
-    android:background="@drawable/goodbye">
+    android:background="@drawable/med_background"
+    tools:context=".GoodBye">
 
     <TextView
         android:id="@+id/Goodbye"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="GOOD BYE SCREEN"
+        android:layout_width="1868dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/further_instructions"
         android:textAlignment="center"
-        android:textColor="@color/purple_500"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints">
+        android:textColor="@color/red"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
 
     <TextView
         android:id="@+id/User"
-        android:layout_width="182dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="229dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="311dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="28dp"
         android:gravity="center"
-        android:text="User Name"
-        android:textSize="18sp"
+        android:text="@string/user_name"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Goodbye"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/Goodbye">
 
     </TextView>
+
     <Button
         android:id="@+id/Butt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="63dp"
-        android:text="Exit"
+        android:layout_width="222dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/exit"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="50sp"
         app:flow_horizontalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/User"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/Goodbye"
+        app:layout_constraintVertical_bias="1.0">
 
     </Button>
 

@@ -29,7 +29,7 @@
         android:id="@+id/textname"
         android:layout_width="1906dp"
         android:layout_height="98dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="296dp"
         android:fontFamily="sans-serif"
         android:text="@string/please_enter_your_name"
         android:textAlignment="center"
@@ -38,19 +38,21 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="@id/textView"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp"></TextView>
+        tools:layout_editor_absoluteX="7dp">
+
+    </TextView>
 
     <EditText
         android:id="@+id/Namefeild"
         android:layout_width="1812dp"
         android:layout_height="140dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:autofillHints="Full Name"
         android:inputType="text"
         android:textSize="70sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textname"
         tools:ignore="SpeakableTextPresentCheck">

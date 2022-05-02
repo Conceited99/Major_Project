@@ -9,17 +9,17 @@
 
     <TextView
         android:id="@+id/Vitals"
-        android:layout_width="1894dp"
-        android:layout_height="100dp"
+        android:layout_width="1896dp"
+        android:layout_height="110dp"
         android:fontFamily="sans-serif"
-        android:text="Vitals"
+        android:text="@string/vitals"
         android:textAlignment="center"
         android:textColor="@color/red"
         android:textSize="70sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="78dp">
+        tools:layout_editor_absoluteY="50dp">
 
     </TextView>
 
@@ -31,11 +31,11 @@
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="User Name"
+        android:text="@string/user_name"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintHorizontal_bias="0.992"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Vitals"
         tools:ignore="MissingConstraints">
@@ -50,18 +50,113 @@
         android:layout_marginTop="416dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="63dp"
+        android:fontFamily="sans-serif"
         android:backgroundTint="@color/red"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="50sp"
         app:flow_horizontalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/User"
-        app:layout_constraintVertical_bias="0.729"
+        app:layout_constraintVertical_bias="0.922"
         tools:ignore="MissingConstraints">
 
     </Button>
+
+    <ScrollView
+        android:layout_width="1907dp"
+        android:layout_height="576dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/vitals"
+        app:layout_constraintBottom_toTopOf="@+id/Butt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="1545dp"
+                    android:layout_height="75dp"
+                    android:text="@string/instruct"
+                    android:textColor="@color/black"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="1863dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="start"
+
+                    android:layout_weight="1"
+                    android:text="@string/pulse"
+                    android:textColor="@color/black"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/oxygen_levels"
+                    android:textColor="@color/black"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="300dp"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="300dp"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,27 @@
     <string name="temperature_section">TEMPERATURE SECTION</string>
     <string name="user_name">User Name</string>
     <string name="next">Next</string>
+    <string name="covid_screening">COVID SCREENING</string>
+    <string name="do_you_or_anyone_in_your_household_have_covid_19">Do you or anyone in your household have Covid-19?</string>
+    <string name="risk_assessment_form">Risk Assessment Form</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="are_you_waiting_for_a_covid_19_test_or_test_result">Are you waiting for a Covid-19 test or test result?</string>
+    <string name="do_you_or_anyone_in_our_household_have_a_continuous_cough">Do you or anyone in our household have a continuous cough?</string>
+    <string name="do_you_or_anyone_in_our_household_have_a_loss_of_taste_or_smell">Do you or anyone in our household have a loss of taste or smell?</string>
+    <string name="do_you_or_anyone_in_our_household_have_a_high_temperature_or_fever">Do you or anyone in our household have a high temperature or fever?</string>
+    <string name="have_you_travelled_in_the_past_14_days_to_any_regions_affected_by_covid_19">Have you travelled in the past 14 days to any regions affected by covid-19?</string>
+    <string name="are_you_over_60_years_old">Are you over 60 years old?</string>
+    <string name="have_you_been_in_contact_with_anyone_that_travelled_in_the_past_14_days">Have you been in contact with anyone that travelled in the past 14 days?</string>
+    <string name="do_you_or_anyone_in_your_household_have_any_other_flu_like_symptoms_such_as_gastrointestial_upset_headache_or_fatigue">Do you or anyone in your household have any other flu-like symptoms, such as gastrointestial upset, headache or fatigue?</string>
+    <string name="do_you_live_with_someone_who_has_either_tested_positive_for_covid_19_or_had_symptoms_of_covid_19_in_the_last_14_days">Do you live with someone who has either tested positive for Covid-19 or had symptoms of Covid-19 in the last 14 days??</string>
+    <string name="do_you_or_anyone_in_your_household_have_or_has_had_possible_or_confirmed_covid_19_or_had_symptoms_of_covid_19_in_the_last_14_days">Do you or anyone in your household have, or has had, possible or confirmed Covid-19 or had symptoms of Covid-19 in the last 14 days?</string>
+    <string name="do_you_have_heart_disease_lung_disease_diabetes_or_any_auto_immune_disorders">Do you have heart disease, lung disease, diabetes or any auto-immune disorders?</string>
+    <string name="further_instructions">FURTHER INSTRUCTIONS</string>
+    <string name="exit">Exit</string>
+    <string name="vitals">Vitals</string>
+    <string name="instruct">Place your sanitized index finger on the sensor</string>
+    <string name="pulse">Pulse</string>
+    <string name="oxygen_levels">Oxygen Levels</string>
+
 </resources>
