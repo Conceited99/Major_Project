@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FaceMaskDetector">
         <activity
+            android:name=".SendData"
+            android:exported="false" />
+        <activity
             android:name=".GoodBye"
             android:exported="false" />
         <activity
