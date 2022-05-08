@@ -27,38 +27,48 @@
 
     <TextView
         android:id="@+id/textname"
-        android:layout_width="1906dp"
-        android:layout_height="98dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="296dp"
         android:fontFamily="sans-serif"
-        android:text="@string/please_enter_your_name"
+        android:text="Please Enter your ID#"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="70sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintTop_toTopOf="@id/textView"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="7dp">
 
     </TextView>
 
-    <EditText
-        android:id="@+id/Namefeild"
-        android:layout_width="1812dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="20dp"
-        android:autofillHints="Full Name"
-        android:inputType="text"
-        android:textSize="70sp"
-        android:textStyle="bold"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:helperText="@string/Required"
+        app:helperTextTextColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/Butt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textname"
-        tools:ignore="SpeakableTextPresentCheck">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
-    </EditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Namefeild"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/id"
+            android:textSize="50dp"
+            android:inputType="number"
+            android:lines="1">
 
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:id="@+id/Butt"
         android:layout_width="292dp"
@@ -77,7 +87,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Namefeild"
         app:layout_constraintVertical_bias="0.83"
         tools:ignore="MissingConstraints">
 

@@ -17,9 +17,9 @@ class Welcome : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
         username = findViewById(R.id.Namefeild)
         Butt.setOnClickListener{
-            if(TextUtils.isEmpty(username.text))
+            if(TextUtils.isEmpty(username.text) || username.length() != 7)
             {
-                Toast.makeText(this, "PLEASE ENTER YOUR NAME", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "PLEASE DOUBLE CHECK ID#", Toast.LENGTH_LONG).show()
             }
              else {
                  val message = username.text.toString()

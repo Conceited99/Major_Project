@@ -24,22 +24,6 @@
 
     </TextView>
 
-    <TextView
-        android:id="@+id/User"
-        android:layout_width="311dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="28dp"
-        android:gravity="center"
-        android:text="@string/user_name"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.977"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Goodbye">
-
-    </TextView>
-
     <Button
         android:id="@+id/Butt"
         android:layout_width="222dp"
