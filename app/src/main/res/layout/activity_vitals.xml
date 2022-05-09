@@ -79,6 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/User" />
 
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="664dp"
@@ -90,38 +91,25 @@
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="1918dp"
-        android:layout_height="425dp"
-        android:layout_marginBottom="16dp"
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="1904dp"
+        android:layout_height="446dp"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+
         app:layout_constraintBottom_toTopOf="@+id/Butt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="1918dp"
-                android:layout_height="425dp"
-                android:focusable="false"
-                android:textColor="@color/black"
-                android:textSize="45sp"
-                android:textStyle="bold"
-
-                />
-        </LinearLayout>
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
