@@ -27,8 +27,8 @@
     <string name="exit">Exit</string>
     <string name="vitals">Vitals</string>
     <string name="instruct">Place your sanitized index finger on the sensor</string>
-    <string name="pulse">Pulse</string>
-    <string name="oxygen_levels">Oxygen Levels</string>
+    <string name="pulse">Pulse and Oxygen Levels</string>
+
     <string name="Required">required</string>
     <string name="id">ID#</string>
 
