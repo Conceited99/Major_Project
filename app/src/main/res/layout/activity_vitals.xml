@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vitals"
-    android:background="@drawable/med_background">
+    android:background="@drawable/med_background"
+    tools:context=".Vitals">
 
     <TextView
         android:id="@+id/Vitals"
@@ -74,12 +74,10 @@
         android:textColor="@color/black"
         android:textSize="60sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/User"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/User" />
 
     <TextView
         android:id="@+id/textView17"
@@ -87,7 +85,6 @@
         android:layout_height="75dp"
         android:layout_gravity="start"
 
-        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:text="@string/pulse"
         android:textColor="@color/black"
@@ -95,8 +92,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.009"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -111,16 +109,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="1918dp"
                 android:layout_height="425dp"
                 android:focusable="false"
+                android:textColor="@color/black"
                 android:textSize="45sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
 
                 />
         </LinearLayout>
