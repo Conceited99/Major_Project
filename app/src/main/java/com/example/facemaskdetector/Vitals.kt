@@ -20,6 +20,7 @@ import java.util.*
 class Vitals : AppCompatActivity() {
     private lateinit var Username: TextView
     private lateinit var data: TextView
+    private lateinit var Butt: Button
     var count = 0
     var bluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
     var hco5 = bluetoothAdapter.getRemoteDevice("00:21:08:01:0B:F1")
@@ -33,7 +34,7 @@ class Vitals : AppCompatActivity() {
         data = findViewById(R.id.Data)
         val t = Thread2()
         t.start()
-        val Butt = findViewById<Button>(R.id.Butt)
+        Butt = findViewById<Button>(R.id.Butt)
         Butt.setOnClickListener{
             val intent = Intent(this,Covid_Activity::class.java).also {
                 it.putExtra("MESSAGE",message)
@@ -75,6 +76,45 @@ class Vitals : AppCompatActivity() {
                         var term = true
                         while (term) {
                             for (i in 0..29) {
+                                if(i<=3)
+                                {
+                                    Butt.setText("10%");
+                                }
+                               else if(i>3 && i<=6)
+                                {
+                                    Butt.setText("20%");
+                                }
+                               else if(i>6 && i<=9)
+                                {
+                                    Butt.setText("30%");
+                                }
+                                else if(i>9 && i<=12)
+                                {
+                                    Butt.setText("40%");
+                                }
+                               else if(i>12 && i<=15)
+                                {
+                                    Butt.setText("50%");
+                                }
+                                else if(i>15 && i<=18)
+                                {
+                                    Butt.setText("60%");
+                                }
+                                else if(i>18 && i<=21)
+                                {
+                                    Butt.setText("70%");
+                                }
+                               else if(i>21 && i<=24)
+                                {
+                                    Butt.setText("80%");
+                                }
+                                else if(i>24 && i<=28)
+                                {
+                                    Butt.setText("90%");
+                                }
+                                else{
+                                    Butt.setText("Next")
+                                }
                                 try {
                                     Thread.sleep(1000)
                                     bytes = inputStream.read(buffer)
