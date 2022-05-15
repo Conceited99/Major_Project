@@ -9,16 +9,15 @@
 
     <TextView
         android:id="@+id/Vitals"
-        android:layout_width="938dp"
-        android:layout_height="94dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="546dp"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:text="@string/vitals"
         android:textAlignment="center"
         android:textColor="@color/red"
-        android:textSize="50sp"
+        android:textSize="70sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/User"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
@@ -27,88 +26,77 @@
 
     <TextView
         android:id="@+id/User"
-        android:layout_width="429dp"
-        android:layout_height="82dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="319dp"
+        android:layout_height="71dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/user_name"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Vitals"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
     </TextView>
 
-    <Button
-        android:id="@+id/Butt"
-        android:layout_width="270dp"
-        android:layout_height="123dp"
-        android:layout_marginTop="452dp"
-        android:backgroundTint="@color/red"
-        android:fontFamily="sans-serif"
-        android:text="@string/next"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        app:flow_horizontalAlign="center"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="846dp">
-
-    </Button>
-
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="1120dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/instruct"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/User" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="425dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView17">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/Data"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:focusable="false"
-                android:textColor="@color/black"
-                android:textSize="45sp"
-                android:textStyle="bold"
-
-                />
-        </LinearLayout>
-    </ScrollView>
-
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="664dp"
-        android:layout_height="75dp"
-        android:layout_gravity="start"
-
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:textAlignment="center"
         android:text="@string/pulse"
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/Butt"
+        android:layout_width="270dp"
+        android:layout_height="123dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="sans-serif"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Data"
+        tools:ignore="MissingConstraints">
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

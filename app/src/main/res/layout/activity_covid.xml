@@ -54,7 +54,7 @@
         tools:layout_editor_absoluteX="-2dp" />
 
     <ScrollView
-        android:layout_width="1922dp"
+        android:layout_width="match_parent"
         android:layout_height="706dp"
         android:background="@drawable/med_background"
         android:contentDescription="@string/covid_screening"
@@ -83,7 +83,7 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="52dp"
                 android:gravity="start"
@@ -110,7 +110,7 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="67dp"
                 android:gravity="start"
@@ -149,7 +149,7 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="67dp"
                 android:gravity="start"
@@ -188,7 +188,7 @@
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="67dp"
                 android:gravity="start"
@@ -227,7 +227,7 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="67dp"
                 android:gravity="start"
@@ -266,7 +266,7 @@
 
             <TextView
                 android:id="@+id/textView7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="68dp"
                 android:gravity="start"
@@ -305,7 +305,7 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="68dp"
                 android:gravity="start"
@@ -344,7 +344,7 @@
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="68dp"
                 android:gravity="start"
@@ -383,8 +383,8 @@
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="1882dp"
-                android:layout_height="97dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="56dp"
                 android:gravity="start"
                 android:text="@string/do_you_or_anyone_in_your_household_have_any_other_flu_like_symptoms_such_as_gastrointestial_upset_headache_or_fatigue"
@@ -423,8 +423,8 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="1894dp"
-                android:layout_height="98dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:gravity="start"
                 android:text="@string/do_you_live_with_someone_who_has_either_tested_positive_for_covid_19_or_had_symptoms_of_covid_19_in_the_last_14_days"
@@ -468,8 +468,8 @@
 
             <TextView
                 android:id="@+id/textView12"
-                android:layout_width="1881dp"
-                android:layout_height="102dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:gravity="start"
                 android:text="@string/do_you_or_anyone_in_your_household_have_or_has_had_possible_or_confirmed_covid_19_or_had_symptoms_of_covid_19_in_the_last_14_days"
@@ -507,7 +507,7 @@
 
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:gravity="start"

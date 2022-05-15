@@ -229,10 +229,9 @@ class MainActivity : AppCompatActivity() {
                     ContextCompat.getColor(
                         applicationContext,if (category.label == "without_mask")
                         {
-                           // playsong()
+                           //playsong()
                             R.color.red
                         }else R.color.green
-
                     )
                 )
                 overlay.background = getDrawable(

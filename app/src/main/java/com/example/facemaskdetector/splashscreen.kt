@@ -12,7 +12,7 @@ private val delay: Long = 5000
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mainactivity2)
             Handler().postDelayed({
-                startActivity(Intent(this,MainActivity::class.java))
+                startActivity(Intent(this,Welcome::class.java))
             finish()
         },delay)
     }

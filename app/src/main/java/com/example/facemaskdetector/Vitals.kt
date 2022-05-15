@@ -108,7 +108,7 @@ class Vitals : AppCompatActivity() {
                                 {
                                     Butt.setText("80%");
                                 }
-                                else if(i>24 && i<=29)
+                                else if(i>24 && i<=28)
                                 {
                                     Butt.setText("90%");
                                 }

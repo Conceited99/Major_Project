@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,32 +8,37 @@
 
     <TextView
         android:id="@+id/data"
-        android:layout_width="1312dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="348dp"
         android:text="SENDING DATA TO NURSE, PLEASE WAIT ......"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="438dp"
-        android:layout_height="441dp"
+        android:layout_width="407dp"
+        android:layout_height="393dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/online" />
+        android:src="@drawable/online"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data" />
 
     <ProgressBar
         android:id="@+id/bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
-        android:layout_marginTop="50dp"
-        style = "@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:indeterminate="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

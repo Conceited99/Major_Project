@@ -9,19 +9,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="1122dp"
-        android:layout_height="196dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:text="@string/welcome_to_the_utech_medical_center"
         android:textAlignment="center"
         android:textColor="@color/red"
-        android:textSize="50sp"
+        android:textSize="70sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.836"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
@@ -35,12 +32,12 @@
         android:text="Please Enter your ID#"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="70sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:ignore="MissingConstraints">
 
     </TextView>
 
@@ -54,14 +51,13 @@
         app:helperTextTextColor="@color/red"
         app:layout_constraintBottom_toTopOf="@+id/Butt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textname">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Namefeild"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
+            android:layout_height="wrap_content"
             android:hint="@string/id"
             android:inputType="number"
             android:lines="1"
@@ -96,12 +92,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="206dp"
-        android:layout_height="216dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="410dp"
+        android:layout_height="312dp"
+        android:layout_marginEnd="1476dp"
         android:contentDescription="@string/red_cross_logo"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
         app:srcCompat="@drawable/red_cross" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
