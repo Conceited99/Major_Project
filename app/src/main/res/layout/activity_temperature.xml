@@ -4,38 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Temperature"
-    android:background="@drawable/med_background">
+    android:background="@drawable/med_background"
+    tools:context=".Temperature">
 
     <TextView
         android:id="@+id/temp"
-        android:layout_width="1918dp"
-        android:layout_height="119dp"
+        android:layout_width="1156dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
         android:text="@string/temperature_section"
         android:textAlignment="center"
         android:textColor="@color/red"
-        android:textSize="70sp"
+        android:textSize="50sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="109dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
     </TextView>
 
     <TextView
         android:id="@+id/User"
-        android:layout_width="320dp"
-        android:layout_height="80dp"
+        android:layout_width="380dp"
+        android:layout_height="62dp"
         android:layout_marginStart="229dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/user_name"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temp">
 
@@ -45,33 +48,29 @@
         android:id="@+id/Butt"
         android:layout_width="326dp"
         android:layout_height="91dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="63dp"
+        android:layout_marginTop="324dp"
         android:backgroundTint="@color/red"
         android:fontFamily="sans-serif"
         android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="50sp"
         app:flow_horizontalAlign="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/User"
-        app:layout_constraintVertical_bias="0.944"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
         tools:ignore="MissingConstraints">
 
     </Button>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="417dp"
-        android:layout_height="488dp"
+        android:layout_width="260dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User"
         app:srcCompat="@drawable/tempcheck"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="281dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
