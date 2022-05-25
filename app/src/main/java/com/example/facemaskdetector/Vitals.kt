@@ -8,6 +8,7 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
+import android.speech.tts.TextToSpeech
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -21,9 +22,13 @@ class Vitals : AppCompatActivity() {
     private lateinit var Username: TextView
     private lateinit var data: TextView
     private lateinit var Butt: Button
+    lateinit var vitals :TextView
+    lateinit var tts: TextToSpeech
     var count = 0
     var bluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
     var hco5 = bluetoothAdapter.getRemoteDevice("00:21:08:01:0B:F1")
+    val vi: String ="When the scan is complete select the next button"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vitals)
@@ -31,6 +36,14 @@ class Vitals : AppCompatActivity() {
         Username = findViewById<TextView?>(R.id.User).apply {
             text = message
         }
+        tts = TextToSpeech(applicationContext, TextToSpeech.OnInitListener {
+            if(it==TextToSpeech.SUCCESS)
+            {
+                tts.language= Locale.US
+                tts.setSpeechRate(1.0f)
+                tts.speak(vi.toString(),TextToSpeech.QUEUE_ADD,null)
+            }
+        })
         data = findViewById(R.id.Data)
         val t = Thread2()
         t.start()
@@ -59,7 +72,8 @@ class Vitals : AppCompatActivity() {
             var socket: BluetoothSocket? = null
             do {
                 try {
-                    if (ContextCompat.checkSelfPermission(this@Vitals, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_DENIED) {
+                    if (ContextCompat.checkSelfPermission(this@Vitals, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager
+                            .PERMISSION_DENIED) {
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                             ActivityCompat.requestPermissions(
                                 this@Vitals,

@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="Please Enter your ID#"
+        android:text="Please Enter your ID"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="70sp"
