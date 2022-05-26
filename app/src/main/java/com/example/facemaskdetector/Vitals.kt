@@ -60,7 +60,23 @@ class Vitals : AppCompatActivity() {
             Vitals.STATE_MESSAGE_RECIEVED -> {
                 val readBuff = msg.obj as ByteArray
                 val tempMsg = String(readBuff, 0, msg.arg1)
-                data.text = tempMsg
+                val d = tempMsg.split("\r\n")[0]
+                println(tempMsg)
+                if (d.contains('$'))
+                {
+                    val tempMsg2 = d.split('$')
+                    data.text = String.Companion.format("BPM:%s SpO2: %s", tempMsg2[0],tempMsg2[1])
+                }
+               // val size = d.size
+                //var temp = ""
+               // println(tempMsg)
+               // if(size >1 ){
+                   // temp =d[size-2]
+                //}else {
+                  //  temp =d[0]
+                //}
+
+
             }
             Vitals.STATE_CONNECTION_FAILED -> {}
         }
@@ -130,12 +146,12 @@ class Vitals : AppCompatActivity() {
                                     Butt.setText("Next")
                                 }
                                 try {
-                                    Thread.sleep(1000)
+                                 // Thread.sleep(1000)
                                     bytes = inputStream.read(buffer)
                                     count++
                                     handler.obtainMessage(STATE_MESSAGE_RECIEVED, bytes, -1, buffer)
                                         .sendToTarget()
-                                    sleep(500)
+                                    //sleep(500)
                                 } catch (e: IOException) {
                                     e.printStackTrace()
                                 } catch (e: InterruptedException) {
