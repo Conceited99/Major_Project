@@ -65,7 +65,7 @@ class Vitals : AppCompatActivity() {
                 if (d.contains('$'))
                 {
                     val tempMsg2 = d.split('$')
-                    data.text = String.Companion.format("BPM:%s SpO2: %s", tempMsg2[0],tempMsg2[1])
+                    data.text = String.Companion.format("BPM:%s     SpO2: %s", tempMsg2[0],tempMsg2[1])
                 }
                // val size = d.size
                 //var temp = ""
